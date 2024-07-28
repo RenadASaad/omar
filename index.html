@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Administration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body> 
+    <h1>Student Administration</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Messi</td>
+                <td>38</td>
+                <td><a href="#">Barcelona</a></td>
+            </tr>
+            <tr>
+                <td>Ronaldo</td>
+                <td>40</td>
+                <td><a href="#">Madrid</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form action="process.html" method="get">
+        <fieldset>
+            <legend>Registration</legend>
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <label>Choose Subject:</label>
+            <label for="html">HTML</label>
+            <input type="radio" id="html" name="subject" value="HTML">
+            <label for="css">CSS</label>
+            <input type="radio" id="css" name="subject" value="CSS">
+            <label for="js">JS</label>
+            <input type="radio" id="js" name="subject" value="JS">
+           
+            
+            <label for="color">Choose Color:</label>
+            <input type="color" id="color" name="color">
+            
+            <label for="htmlFile">Choose HTML File:</label>
+            <input type="file" id="htmlFile" name="htmlFile" accept=".html">
+            
+            <label for="grade">Your Grade:</label>
+            <input type="text" id="grade" name="grade">
+            
+            <label for="city">Choose City:</label>
+            <select id="city" name="city">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Cairo">Cairo</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <footer>
+        © Atomika - Frontend
+    </footer>
+
+</body>
+</html>
